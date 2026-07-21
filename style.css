@@ -191,12 +191,12 @@ img { max-width: 100%; display: block; }
   left: 50%;
   transform: translateX(-50%);
   color: var(--ink-soft);
-  animation: bob 2.2s ease-in-out infinite;
+  opacity: 0.5;
+  transition: opacity 0.3s;
 }
 
-@keyframes bob {
-  0%, 100% { transform: translate(-50%, 0); }
-  50% { transform: translate(-50%, 6px); }
+.scroll-hint:hover {
+  opacity: 1;
 }
 
 /* ---------- Buttons ---------- */
