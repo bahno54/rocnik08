@@ -24,7 +24,10 @@ const spy = new IntersectionObserver(
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute('id');
         navLinks.forEach((link) => {
-          link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+          const href = link.getAttribute('href');
+          // Match both #section anchors and koupit.html for the #koupit banner
+          const match = href === `#${id}` || (id === 'koupit' && href === 'koupit.html');
+          link.classList.toggle('active', match);
         });
       }
     });

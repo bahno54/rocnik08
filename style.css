@@ -564,6 +564,94 @@ img { max-width: 100%; display: block; }
 
 .to-top:hover { background: var(--ink); color: var(--paper); }
 
+/* ---------- Thanks page ---------- */
+.thanks-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(160deg, var(--sage), var(--lavender));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  color: #fff;
+}
+
+/* ---------- Shop (koupit.html) ---------- */
+.shop-eyebrow {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  margin: 0 0 6px;
+}
+
+.shop-stats {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.shop-stats li {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  padding-left: 18px;
+  position: relative;
+}
+
+.shop-stats li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--line);
+}
+
+.shop-price {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.shop-note {
+  margin-top: 16px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.shop-quote {
+  margin: 0;
+}
+
+/* ---------- Distribuce ---------- */
+.distribuce-link {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.15s;
+}
+
+.distribuce-link:hover {
+  opacity: 0.6;
+}
+
+.shop-quote p {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.7;
+  max-width: 48ch;
+  margin: 0 0 10px;
+}
+
+.shop-quote footer {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .nav { display: none; }
